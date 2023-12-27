@@ -7,5 +7,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/ox
 RUN unzip oxer.zip
 WORKDIR oxer-html
 RUN mv * ..
-CMD service nginx start
 EXPOSE 80
+CMD service nginx start
