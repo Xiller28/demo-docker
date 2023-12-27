@@ -2,10 +2,10 @@ From ubuntu:latest
 RUN apt-get update
 RUN apt-get install nginx -y
 RUN apt-get install unzip -y
-CMD service nginx start
 WORKDIR /var/www/html/
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip /var/www/html
 RUN unzip oxer.zip
 WORKDIR oxer-html
 RUN mv * ..
+CMD service nginx start
 EXPOSE 80
