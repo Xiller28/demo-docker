@@ -8,5 +8,3 @@ RUN unzip oxer.zip
 WORKDIR oxer-html
 RUN mv * ..
 EXPOSE 80
-RUN service nginx start
-RUN service nginx enable
